@@ -1,0 +1,29 @@
+*** Settings ***
+Library           SeleniumLlibrary
+
+*** Variables ***
+${HOMEPAGE}       https://www.amazon.com/
+${BROWSER}        Firefox
+${searchkey}      6S
+${result}         Apple iPhone 6S
+
+*** Test Cases ***
+Search_product
+    Log    Test to verify the search in Amazon website
+    Set Selenium Implicit Wait    120
+    Setup
+    Amazon_search
+    Teardown
+
+*** Keywords ***
+Setup
+    Open Browser    ${HOMEPAGE}    ${BROWSER}
+    Maximize Browser Window
+
+Teardown
+    Close All Browsers
+
+Amazon_search
+    Input Text    type=text    ${searchkey}
+    Click Button    type=submit
+    Wait Until Page Contains    ${result}    timeout=30

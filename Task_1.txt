@@ -1,0 +1,56 @@
+Task 1
+
+Please find the answers inline for this task:
+
+Imagine the following situation. You need to establish a QA process in a cross-functional team.
+The team builds a front-end application using REST APIs.
+
+1. Where would you start? What would be your first steps?
+	--> The first step to start with is reviewing of Software Requirements Specifications (SRS) document or Grooming document as the 
+		requirement must be clear.
+	--> The project can not take off without the clear project requirement. This will be very important phase where the ideas needs to be 
+		documented or prepared in a formatted and understandable document.
+	--> It is crucial phase where QA Engineer needs to gather all information, record it & analyse, followed by validating and verifying 
+		the technical aspects of the apllication.
+
+2. Which process would you establish around testing new functionality? How would you want the features to be tested?
+	--> I would like to establish an Agile methodology process for testing the new functionalities as it is well organized approach.
+	--> It also gives the sense of ownership and results in increased productivity.
+	--> Build cycles should be made available for the QA Engineers for testing in each sprint paralelly with the developers.
+	--> Create API test suites or cases for the feature that is being picked for each sprint and test them based on the build cycles.
+	--> The feature testing must be well organized as in:
+		SRS/Grooming document review 
+		Setting the objective
+		Target sprint / target date
+		Detailed plan of the application/project
+		Test plan or test strategy
+		Writing test case
+		Test case review
+		Running test cases
+		Report summary
+		Report the BUGS if any, to developers
+		Regression testing
+		Decision for the project/build release based on test results
+	
+3. Which tools would you suggest using to help your team with a daily work?
+	--> There are multiple tools emerging day by day with different features and functionalities.
+	--> I would suggest to use POSTMAN for the API testing as it is a very powerful tool for integration testing.
+	--> For front end UI testing i would like to suggest Selenium/Robot Framework/pytest (We extensively use these in our current project).
+	--> Quality Center(QC) for the test management, requirements management and software quality assurance. Here we can keep track of all 
+		the automated and manual test cases in Test plan and upload the results of test cases to test lab. (We are using this)
+	--> Use JIRA tool for bug/issue tracking and project management. (We currently use this and PRONTO tool which is a Fault Management tool)
+	
+4. If you would do a test automation which techniques or best practices would you use the application?
+	--> The best approach is adding the regression jobs in Jenkins as part of Continous Integration(CI) which automates the testing (when added 
+		in build pipeline) and the report will be generated for testcase analysis. (We currently use this approach)
+	--> We should consider using the BDD (Behaviour Driven Development) framework.
+	--> Make the test cases simpler and easily readable (also easy to analyse upon failure).
+	--> We should not always consider documenting or automating functionality testing, we should also consider all the negative 
+		scenarios, performance, load and stress testing.
+	--> The newly written test cases should be reviewed by other team members/team lead for the better quality.
+	--> Always go through the DFMEA(Design Failure Mode and Effect Analysis) document or involve in the DFMEA meetings when conducted by 
+		developers (during development process) to get more clarity.
+	--> Consider hitting all the corner case scnearios during the application test, as sometimes QA team consider/concentrate on positive/negative 
+		test case scanarios.
+
+****************************************
